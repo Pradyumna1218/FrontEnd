@@ -1,0 +1,172 @@
+:root{
+    --main-text: #8a2be2;  
+    --nav-text: #888;   
+    --card-color: #dbb4ec;   
+    --container-text: black; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    border-bottom: 2px solid var(--main-text);
+    padding: 20px;
+    height: 10vh;
+}
+
+.logo{
+    color: var(--main-text);
+    font-size: 20px;
+}
+
+img {
+  width: 200px;
+  height: 30px;
+}
+
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom{
+    margin-top: 5px;
+    border-bottom: 2px solid var(--main-text);
+}
+nav ul{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0px 40px 0px 0px;
+    font-size: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--nav-text);
+    transition: 0.2s;
+    
+}
+nav ul li a:hover{
+    color: var(--main-text);
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbtn {
+    color: var(--main-text);
+    padding: 8px;
+    border: 1px solid var(--main-text);
+    border-radius: 20px;
+    width: 93px;
+  }
+
+
+.container{
+    min-height: calc(100vh - 21vh);
+    background-color: var(--container-color);
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.text .typing{
+    height: 60px;
+}
+.text .typing li{
+    list-style: none;
+    font-size: 40px;
+    font-weight: 100px;
+}
+
+.text .typing li span{
+    color: var(--main-text );
+    position: relative;
+    font-family: "Sofadi One", system-ui;
+}
+
+.text .typing li span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: white;
+    border-left: 2px solid black; 
+    animation: typing 2s steps(23, end) forwards infinite, pauseBlink 2s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    0% {
+        left: 0;
+    }
+    70% {
+        left: 100%; 
+    }
+    100% {
+        left: 100%; 
+    }
+}
+
+/* Optional blinking cursor after typing finishes */
+@keyframes pauseBlink {
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: black;
+    }
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    background-color: var(--card-color);
+    width: 700px;
+    height: 500px;
+}
+footer{
+    border-top: 2px solid var(--main-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.content{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.icons a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--main-text);
+}
