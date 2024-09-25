@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InstaRead</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Sofadi+One&display=swap" rel="stylesheet">
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrachaRead</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Sofadi+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <img src="Logo.png" alt="Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <button class ="navbtn">SignUp</button> 
-            </nav>
+      <div class="header flex">
+        <div class="logo">
+          <img src="Logo.png" alt="Logo" />
         </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button class="navbtn">SignUp</button></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
-        <div class="container">
-            <div class="text flex">
-                <ul class="typing">
-                    <li><span class>Upload The Picture</span></li>
-                    
-                </ul>
-            </div>
-            <div class="container2 flex">
-                <div class="card">
-                    <button class = "uploadbtn">Choose Image</button>
-
-                    <div class="slider">
-                        <img src="images/img1.jpg" alt="">
-                        <img src="images/img2.jpg" alt="">
-                        <img src="images/img3.jpg" alt="">
-                        <img src="images/img4.jpg" alt="">
-
-                    </div>
-                    
-                </div>
-            </div>
+      <div class="container">
+        <div class="text flex">
+          <ul class="typing">
+            <li><span class>Upload The Picture</span></li>
+          </ul>
         </div>
+
+        <div class="container2 flex">
+          <div class="card">
+            <label class="uploadbtn" for="image-upload">Choose Image</label>
+            <input id="image-upload" class="upload-input" type="file" accept="image/*"/>
+            <p id="file-name">No file selected!</p>
+
+            <div class="slider">
+              <img src="images/img1.jpg" alt="" />
+              <img src="images/img2.jpg" alt="" />
+              <img src="images/img3.jpg" alt="" />
+              <img src="images/img4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
     <footer>
-        <div class="content">
-            <img src="Logo.png" alt="Logo">| Copyright &copy 2024 InstaRead
-        </div>
-        <div class="socials">
+      <div class="content">
+        <div class="notes">
+          <img src="Logo.png" alt="Logo" />
+          <p>Copyright &copy 2024 PrachaRead</p>
+          <div class="socials">
             <div class="icons">
-                
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
             </div>
-
+          </div>
         </div>
-
-    </footer>    
+      </div>
+    </footer>
     <script src="index.js"></script>
-
-</body>
+  </body>
 </html>
