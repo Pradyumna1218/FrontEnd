@@ -244,7 +244,6 @@ nav ul li a {
     color: var(--main-text)
   }
   
-
 .card {
     display: flex;
     flex-direction: column;
@@ -253,7 +252,7 @@ nav ul li a {
     padding: 12px;
     background-color: var(--card-color);
     width: 85vmin;
-    height: 500px;
+    height: 300px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
@@ -266,7 +265,7 @@ nav ul li a {
 }
 
 .slider {
-  width: 78vmin;
+  width: 26vmin;
   height: auto;
   display: flex;
   overflow: hidden;
@@ -274,7 +273,7 @@ nav ul li a {
 }
 
 .slider img {
-  width: 78vmin;
+  width: 26vmin;
   flex-shrink: 0;
 }
 
