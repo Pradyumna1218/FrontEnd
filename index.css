@@ -523,11 +523,11 @@ button{
 
   .card {
     justify-content: center;
-    height: 400px
+    height: 270px
   }
   #about{
     /* padding: 20px 0px; */
-    margin: 2px 28px;  
+    margin: -145px 28px;  
   }
   .aboutleft img{
     width: 100%;
